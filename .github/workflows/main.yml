@@ -1,0 +1,12 @@
+name: Run Playwright API Call
+
+on:
+  workflow_dispatch:   # Trigger manually
+
+jobs:
+  call-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Playwright Run API
+        run: |
+          curl --location 'https://e4c577d9a39a.ngrok-free.app/api/v1/playwright/run-tests-ciCD?id=257&email=superadmin%40yopmail.com'
