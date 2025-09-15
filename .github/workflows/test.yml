@@ -1,0 +1,13 @@
+name: Sample Playwright API Call
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Sample Playwright Run API
+        run: |
+          # Note: You can provide either 'id' or 'projectId' as a query parameter
+          curl --location 'https://beta8.moontechnolabs.com/tms-one-api/api/v1/playwright/run-tests-ciCD?id=123&email=sampleUser@example.com&projectId=NzA='
