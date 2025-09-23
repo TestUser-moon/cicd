@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Call Playwright Run API
         run: |
-          curl --location 'https://0f0deef8e25f.ngrok-free.app/api/v1/playwright/run-tests-ciCD?id=303&email=finalPlanCheck@yopmail.com'
+          curl --location 'https://a7f6eb702c51.ngrok-free.app/api/v1/playwright/run-tests-ciCD?projectId=NzQ=&email=finalPlanCheck@yopmail.com'
